@@ -1,0 +1,47 @@
+-------------------------------------------------------------------------------
+Test set: TestCases
+-------------------------------------------------------------------------------
+Tests run: 8, Failures: 7, Errors: 0, Skipped: 0, Time elapsed: 0.022 s <<< FAILURE! - in TestCases
+basicChecks  Time elapsed: 0.011 s  <<< FAILURE!
+org.opentest4j.MultipleFailuresError: 
+Multiple Failures (1 failure)
+	java.lang.ClassNotFoundException: dao.PersonDaoImpl
+	at TestCases.basicChecks(TestCases.java:25)
+
+addPerson  Time elapsed: 0 s  <<< FAILURE!
+org.opentest4j.MultipleFailuresError: 
+Multiple Failures (1 failure)
+	java.lang.NoSuchMethodException: utilities.EMUtil.provideEntityManager()
+	at TestCases.addPerson(TestCases.java:41)
+
+addPersonException  Time elapsed: 0 s  <<< FAILURE!
+org.opentest4j.MultipleFailuresError: 
+Multiple Failures (1 failure)
+	java.lang.NoSuchMethodException: entities.Person.setName(java.lang.String)
+	at TestCases.addPersonException(TestCases.java:65)
+
+findPersonById  Time elapsed: 0 s  <<< FAILURE!
+org.opentest4j.MultipleFailuresError: 
+Multiple Failures (1 failure)
+	java.lang.NoSuchMethodException: utilities.EMUtil.provideEntityManager()
+	at TestCases.findPersonById(TestCases.java:80)
+
+findPersonByIdException  Time elapsed: 0 s  <<< FAILURE!
+org.opentest4j.MultipleFailuresError: 
+Multiple Failures (1 failure)
+	java.lang.NoSuchMethodException: utilities.EMUtil.provideEntityManager()
+	at TestCases.findPersonByIdException(TestCases.java:98)
+
+deletePerson  Time elapsed: 0 s  <<< FAILURE!
+org.opentest4j.MultipleFailuresError: 
+Multiple Failures (1 failure)
+	java.lang.NoSuchMethodException: utilities.EMUtil.provideEntityManager()
+	at TestCases.deletePerson(TestCases.java:121)
+
+deletePersonException  Time elapsed: 0 s  <<< FAILURE!
+org.opentest4j.MultipleFailuresError: 
+Multiple Failures (1 failure)
+	java.lang.NoSuchMethodException: utilities.EMUtil.provideEntityManager()
+	at TestCases.deletePersonException(TestCases.java:143)
+
+buildScore  Time elapsed: 0.001 s
